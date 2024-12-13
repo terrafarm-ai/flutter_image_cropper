@@ -117,6 +117,7 @@ class ImageCropperPlugin extends ImageCropperPlatform {
       minContainerHeight: webSettings.minContainerHeight ?? 100,
       minCropBoxWidth: webSettings.minCropBoxWidth ?? 0,
       minCropBoxHeight: webSettings.minCropBoxHeight ?? 0,
+      autoCropArea: 1.0,
     );
     Cropper? cropper;
     initializer() => Future.delayed(
